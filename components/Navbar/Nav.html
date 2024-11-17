@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--STYLES-->
+  <link rel="stylesheet" href="/components/Navbar/Nav.css">
+</head>
+<body>
+  <nav>
+    <!--<div class="logo">Chukuto Planet</div>-->
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="/index.html">home</a></li>
+      <li><a href="/pages/students/students.html">Students</a></li>
+      <li><a href="/pages/teacher/teacher.html">Teacher</a></li>
+      <li><a href="/pages/about/aboutUs.html">about us</a></li>
+      <li><a href="#">contact us</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Chukuto Planet</a></li>
+      <li class="hideOnMobile"><a href="/index.html">home</a></li>
+      <li class="hideOnMobile"><a href="/pages/students/students.html">Students</a></li>
+      <li class="hideOnMobile"><a href="/pages/teacher/teacher.html">Teacher</a></li>
+      <li class="hideOnMobile"><a href="/pages/about/aboutUs.html">about us</a></li>
+      <li class="hideOnMobile"><a href="#">contact us</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  <!-- FUNCTIONS -->
+  <script>
+    function showSidebar(){
+      console.log("Sidebar should open")
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      console.log("Sidebar should close")
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>
