@@ -7,11 +7,13 @@ nav{
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul{
+  text-transform: uppercase;
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-weight: 600;
 }
 nav li{
   height: 50px;
@@ -25,10 +27,13 @@ nav a{
   color: black;
 }
 nav a:hover{
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
+  border-radius: 8px;
 }
 nav li:first-child{
   margin-right: auto;
+  font-weight: bold;
+  font-size: 20px;
 }
 .sidebar{
   position: fixed;
@@ -36,7 +41,7 @@ nav li:first-child{
   right: 0;
   height: 100vh;
   width: 250px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.603);
   backdrop-filter: blur(12px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
